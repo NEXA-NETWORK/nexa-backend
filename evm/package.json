@@ -1,0 +1,49 @@
+{
+  "name": "evm_relayer_x_burn_mint",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "verify": "npx hardhat run scripts/verify.ts --network  ",
+    "deploy": "npx hardhat run scripts/deploy.ts --network ",
+    "deploy:diamond": "npx hardhat run scripts/deploy_diamond.ts --network ",
+    "deploy:cat_token_facet": "npx hardhat run scripts/deploy_cat_token_facet.ts --network ",
+    "deploy:cat_proxy_token_facet": "npx hardhat run scripts/deploy_cat_proxy_token_facet.ts --network ",
+    "deploy:cat_nft_facet": "npx hardhat run scripts/deploy_cat_nft_facet.ts --network ",
+    "deploy:cat_proxy_nft_facet": "npx hardhat run scripts/deploy_cat_proxy_nft_facet.ts --network ",
+    "deploy:admin_facet": "npx hardhat run scripts/deploy_admin_facet.ts --network ",
+    "deploy:admin_wormhole_facet": "npx hardhat run scripts/deploy_admin_update_wormhole_facet.ts --network ",
+    "deploy:nft": "npx hardhat run scripts/deploy_nft.ts --network ",
+    "deploy:test_token": "npx hardhat run scripts/deploy_test_token.ts --network ",
+    "test": "npx hardhat test"
+  },
+  "devDependencies": {
+    "@ethersproject/abi": "^5.4.7",
+    "@ethersproject/providers": "^5.4.7",
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "@nomiclabs/hardhat-ethers": "^2.0.0",
+    "@nomiclabs/hardhat-etherscan": "^3.1.7",
+    "@openzeppelin/contracts": "^4.8.3",
+    "@openzeppelin/hardhat-upgrades": "^1.22.1",
+    "@typechain/ethers-v5": "^10.1.0",
+    "@typechain/hardhat": "^6.1.2",
+    "@types/chai": "^4.2.0",
+    "@types/mocha": ">=9.1.0",
+    "@types/node": ">=12.0.0",
+    "chai": "^4.2.0",
+    "ethers": "^5.4.7",
+    "hardhat": "^2.12.7",
+    "hardhat-gas-reporter": "^1.0.8",
+    "solhint": "^3.4.1",
+    "solidity-coverage": "^0.8.0",
+    "ts-node": ">=8.0.0",
+    "typechain": "^8.1.0",
+    "typescript": ">=4.5.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  }
+}
